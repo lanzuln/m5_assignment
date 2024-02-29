@@ -5,7 +5,7 @@
 font-family: "Montserrat",sans-serif; */
 
 
-
+/* common css  */
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +35,9 @@ h5 {
     font-size: 40px;
     text-transform: uppercase;
     color: #D62727;
+}
+.pb_none_mobile{
+    padding-bottom: 0px;
 }
 
 /* ========== hero css ========  */
@@ -103,6 +106,32 @@ h5 {
     background: #D62727;
 }
 
+/* about  */
+#about .section_title{
+    padding-bottom: 20px;
+}
+.about_left{
+    background-image: url('../assets/image/about.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.social_share {
+    margin-top: 30px;
+}
+.social_share a {
+    color: #343434;
+    font-size: 17px;
+    margin: 5px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+}
+.social_share a:hover{
+    color: #D62727;
+}
 
 /* portfolio section  */
 .single_portfolio {
@@ -238,13 +267,13 @@ footer p{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
-    background-color: #007bff;
+    background-color: #ff0000;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 50%;
     cursor: pointer;
+    height: 50px;
+    width: 50px;
 }
 
 /* media  query  */
@@ -267,5 +296,9 @@ footer p{
     .inner_hero h2 {
         font-size: 55px;
     }
+    .pb_none_mobile{
+        padding-bottom: 0px;
+    }
+    
  }
 
